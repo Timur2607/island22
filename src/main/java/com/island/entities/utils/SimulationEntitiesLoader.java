@@ -11,9 +11,9 @@ import static java.util.Arrays.asList;
 
 public class SimulationEntitiesLoader {
 
-    private final Path pathToUserDirectory = Path.of(System.getProperty("user.dir"));
-    private final Path pathToClasses = pathToUserDirectory.resolve("src/main/java/com/dudarev/island/classes");
-    private final String classesPackageName = "com.dudarev.island.classes";
+    private final Path pathToUserDirectory = Path.of(System.getProperty("src/main/java/com/island/entities/{predators, plants, herbivores}"));
+    private final Path pathToClasses = pathToUserDirectory.resolve("src/main/java/com/island/entities");
+    private final String classesPackageName = "com.island.entities";
     private final ArrayList<String> classesToLoadDirNames = new ArrayList<>(asList("predators", "plants", "herbivores"));
 
 
